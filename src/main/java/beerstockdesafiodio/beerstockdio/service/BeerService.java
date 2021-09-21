@@ -1,9 +1,19 @@
 package beerstockdesafiodio.beerstockdio.service;
 
+import beerstockdesafiodio.beerstockdio.dto.BeerDTO;
+import beerstockdesafiodio.beerstockdio.enitity.Beer;
+import beerstockdesafiodio.beerstockdio.exception.BeerAlreadyRegisteredException;
+import beerstockdesafiodio.beerstockdio.exception.BeerNotFoundException;
+import beerstockdesafiodio.beerstockdio.exception.BeerStockExceededException;
+import beerstockdesafiodio.beerstockdio.mapper.BeerMapper;
 import beerstockdesafiodio.beerstockdio.repository.BeerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor(onConstructor = @__(@Autowired))
