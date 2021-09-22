@@ -15,17 +15,15 @@
 	<name>beerstock-dio</name>
 	<description>Desafio DIO Spring Boot</description>
 	<properties>
-		<java.version>1.8</java.version>
-		<org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
+		<java.version>16</java.version>
 	</properties>
 
 	<dependencies>
-			<dependency>
-				<groupId>org.mapstruct</groupId>
-				<artifactId>mapstruct</artifactId>
-				<version>1.3.1.Final</version>
-				<scope>compile</scope>
-			</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>1.4.2.Final</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -58,11 +56,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.mapstruct</groupId>
-			<artifactId>mapstruct</artifactId>
-			<version>1.4.2.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
