@@ -53,7 +53,7 @@ Um detalhe interessante é que no nível 1 já usamos os verbos HTTP de forma co
 Como já foi adiantado no nível 1, o nível 2 se encarrega de garantir que os verbos HTTP sejam usados de forma correta. Os verbos mais utilizados são GET, POST, PUT e DELETE.
 Os métodos GET, PUT e DELETE são considerados idempotente. Um método é considerado idempotente quando uma requisição idêntica pode ser executada várias vezes sem alterar o estado do servidor.
 
-#### Nível 3 — HATEOAS
+### Nível 3 — HATEOAS
 
 O nível 3 é sem dúvidas o menos explorado, muitas APIs existentes no mercado não implementam esse nível.
 HATEOAS significa Hypermedia as the Engine of Application State. Uma API que implementa esse nível fornece aos seus clientes links que indicarão como poderá ser feita a navegação entre seus recursos. Ou seja, quem for consumir a API precisará saber apenas a rota principal e a resposta dessa requisição terá todas as demais rotas possíveis.
@@ -61,6 +61,12 @@ HATEOAS significa Hypermedia as the Engine of Application State. Uma API que imp
 # Pirâmide de Testes
 
 A pirâmide de testes é uma ilustração que permite visualizar de forma simples os tipos de testes, seus níveis, velocidades, complexidades e “custos”. Além disso ela busca dar um direcionamento em relação a quantidade de testes a ser implementados em cada nível.
+
+## 3 Níveis de Teste
+
+Base – Testes unitários
+Meio – Testes de integração
+Topo – Testes ponta a ponta (E2E)
 
 # Importancia de Testes
 
